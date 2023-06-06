@@ -186,7 +186,10 @@ body {
    
   }
   #picture-div{
-    display: flex;
+    margin-left: 25%;
+  }
+  #left-pic{
+    margin: 5px;
   }
   #contact-div{
     display: flex;

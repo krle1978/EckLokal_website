@@ -161,7 +161,7 @@ function OppenTime(){
 }
 
 function Pictures(){
-  document.getElementById("picture-div").style.display = "block";
+  document.getElementById("picture-div").style.display = "flex";
 
   document.getElementById("openTime-div").style.display = "none";
   document.getElementById("aboutUs-div").style.display = "none";
