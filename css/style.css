@@ -1,0 +1,231 @@
+body {
+  margin-top: 0;
+    background-image: url("../pics/Ecklokal-Tapette-bkg.jpg");
+  }
+  h1 {
+    color: rgb(90, 128, 0);
+  }
+  h2{
+    color: yellow;
+    background-color: #024215;
+  }
+  p {
+    color: greenyellow;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .logo-div{
+    border: 5px solid;
+    margin: 10px auto;
+    width: 50%;
+    background-color: #0f3604a8;
+  }
+  .logo-div img{
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+  }
+  .Arrow{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .navbar{
+    justify-content: center;
+    display: block;
+    border: 5px solid;
+    margin: auto;
+    padding: 0 30%;
+    background: linear-gradient(grey,rgba(128, 128, 128, 0.027));
+    box-shadow: 0 0 .5em rgba(0,0,0, .5);
+    position: fixed;
+    top: 0;
+    border: solid black 1px;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+  }
+ 
+  .button_navbar{
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 20%;
+    width: 25px;
+    height: 20px;
+    float: left;
+    margin: 0 1%;
+    display: block;
+    background-color: #06b93c05;
+    color: #024215;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  #home-btn{
+    left: 30%;
+    background-image: url("./icons/home-logo.png");
+    background-size: cover;
+  }
+  #aboutUs-btn{
+    left: 35%;
+    background-image: url("./icons/about-us-icon-34428.jpg");
+    background-size: cover;
+  }
+  #menu-btn{
+    left: 40%;
+    background-image: url("./icons/eating-logo.png");
+    background-size: cover;
+  }
+  
+  #starter-btn{
+    left: 45%;
+    background-image: url("./icons/ala-card-ico.png");
+    background-size: cover;
+  }
+  #OppenTime-btn{
+    left: 50%;
+    background-image: url("./icons/oppen-time-ico.png");
+    background-size: cover;
+  }
+
+  #Picture-btn{
+    left: 55%;
+    background-image: url("./icons/pictures_imageBTN.png");
+    background-size: cover;
+  }
+  #Contact-btn{
+    left: 55%;
+    background-image: url("./icons/contact-us-ico.png");
+    background-size: cover;
+  }
+  .button_navbar:hover{
+   height: +20%;
+  }
+  .main-up{
+    position: relative;
+    top: 100px;
+    margin-left: 2px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    width: 100%;
+  }
+  
+  #right-side{
+    display: block;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 20px;
+    overflow-y: scroll;
+    width: 800px;
+    height: 100%;
+    background-image: url("..\\pics\\BackGround_03_edited.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #menu{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    border-style: none;
+  }
+
+#start{
+  display: block;
+  background-size: cover;
+}
+#card{
+  display: none;
+  background-image: url("../pics/bg-services-medium.jpg");
+  background-size: cover;
+  background-color: #02421570;
+  
+}
+#card div{
+  margin: 0 10px;
+}
+  #aboutUs-div, #starter-div, #contact, #maincourse-div, #openTime-div, #picture-div{
+    display: none;
+    text-align: center;
+    border-style: none;
+    padding-bottom: 5px;
+    margin-bottom: 20%;
+  }
+  #openTime-div{
+    background-size: cover;
+    padding: 15px;
+    background-color: #02421570;
+    margin-top: 15px;
+  }
+    #abouUs-content{
+      margin: 25%;
+    }
+  #aboutUs-div{
+    background-color: #02421570;
+  }
+  #wellcome{
+    display: none;
+    padding: 10px;
+    color: black;
+    background-color: #02421570;
+  }
+  
+  #contact{
+    background-color: #02421570;
+    padding-bottom: 20%;
+    text-align: center;
+    max-width: 800px;
+   
+  }
+  #picture-div{
+    display: flex;
+  }
+  #contact-div{
+    display: flex;
+    margin: 25%;
+  }
+  #address-div{
+    border: none;
+    background-image: url("../pics/Google_Maps_icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #address{
+    
+    background-size: 80%;
+  }
+  #address, #telephone{
+    border: 1px ;
+    border-radius: 20%;
+    padding: 5px;
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    text-align: center;
+    vertical-align: middle;
+    align-self: baseline;
+    padding-top: 15px;
+    
+  }
+  #address:hover, #telephone:hover{
+    
+    background-color: #06b93c98;
+    opacity: 50%;
+    cursor: pointer;
+  }
+  #address p, #telephone p{
+    padding-top: 15px;
+    
+  }
+  #google-maps{
+    display: none;
+  }
+
