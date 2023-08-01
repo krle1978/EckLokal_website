@@ -1,0 +1,38 @@
+
+.show{
+    display: block !important;
+}
+.box{
+    width: auto;
+    min-height: 200px;
+    border: 1px solid black;
+    display: flex;
+}
+.innerBox{
+    margin: 1%;
+    width: 80%;
+    min-height: 80%;
+    border: 1px solid black;
+}
+.innerSubBox{
+    margin: 1%;
+    width: 300px;
+    min-height: 80%;
+    border: 1px solid black;
+    display: none;
+}
+img{
+    margin: 10%;
+}
+.colorRed{
+    background-color: red;
+}
+.colorBlue{
+    background-color: blue;
+}
+.colorWhite{
+    background-color: white;
+}
+.colorGreen{
+    background-color: rgba(172, 255, 47, 0.39);
+}

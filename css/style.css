@@ -10,7 +10,8 @@ body {
     background-color: #024215;
   }
   p {
-    color: greenyellow;
+    margin: 0px 20px;
+    color: yellow;
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
@@ -69,39 +70,39 @@ body {
   
   #home-btn{
     left: 30%;
-    background-image: url("./icons/home-logo.png");
+    background-image: url("../icons/home-logo.png");
     background-size: cover;
   }
   #aboutUs-btn{
     left: 35%;
-    background-image: url("./icons/about-us-icon-34428.jpg");
+    background-image: url("../icons/about-us-icon-34428.jpg");
     background-size: cover;
   }
   #menu-btn{
     left: 40%;
-    background-image: url("./icons/eating-logo.png");
+    background-image: url("../icons/eating-logo.png");
     background-size: cover;
   }
   
-  #starter-btn{
+  #card-btn{
     left: 45%;
-    background-image: url("./icons/ala-card-ico.png");
+    background-image: url("../icons/ala-card-ico.png");
     background-size: cover;
   }
   #OppenTime-btn{
     left: 50%;
-    background-image: url("./icons/oppen-time-ico.png");
+    background-image: url("../icons/oppen-time-ico.png");
     background-size: cover;
   }
 
   #Picture-btn{
     left: 55%;
-    background-image: url("./icons/pictures_imageBTN.png");
+    background-image: url("../icons/pictures_imageBTN.png");
     background-size: cover;
   }
   #Contact-btn{
     left: 55%;
-    background-image: url("./icons/contact-us-ico.png");
+    background-image: url("../icons/contact-us-ico.png");
     background-size: cover;
   }
   .button_navbar:hover{
@@ -126,23 +127,23 @@ body {
     overflow-y: scroll;
     width: 800px;
     height: 100%;
-    background-image: url("..\\pics\\BackGround_03_edited.jpg");
+    /*background-image: url("..\\pics\\BackGround_03_edited.jpg");*/
     background-size: cover;
     background-attachment: fixed;
   }
   
-  #menu{
+  #menu-div{
     margin: 10px auto;
     display: block;
     text-align: center;
     border-style: none;
+    background-color: #02421570;
   }
 
-#start{
-  display: block;
-  background-size: cover;
+#home-div{
+  background-color: #02421570;
 }
-#card{
+#card-div{
   display: none;
   background-image: url("../pics/bg-services-medium.jpg");
   background-size: cover;
@@ -152,83 +153,82 @@ body {
 #card div{
   margin: 0 10px;
 }
-  #aboutUs-div, #starter-div, #contact, #maincourse-div, #openTime-div, #picture-div{
-    display: none;
-    text-align: center;
-    border-style: none;
-    padding-bottom: 5px;
-    margin-bottom: 20%;
-  }
-  #openTime-div{
-    background-size: cover;
-    padding: 15px;
-    background-color: #02421570;
-    margin-top: 15px;
-  }
-    #abouUs-content{
-      margin: 25%;
-    }
-  #aboutUs-div{
-    background-color: #02421570;
-  }
-  #wellcome{
-    display: none;
-    padding: 10px;
-    color: black;
-    background-color: #02421570;
-  }
-  
-  #contact{
-    background-color: #02421570;
-    padding-bottom: 20%;
-    text-align: center;
-    max-width: 800px;
-   
-  }
-  #picture-div{
-    margin-left: 25%;
-  }
-  #left-pic{
-    margin: 5px;
-  }
-  #contact-div{
-    display: flex;
+#aboutUs-div, #starter-div, #contact-div, #maincourse-div, #openTime-div, #picture-div{
+  display: none;
+  text-align: center;
+  border-style: none;
+  padding-bottom: 5px;
+  margin-bottom: 20%;
+  background-color: #02421570;
+}
+#openTime-div{
+  background-size: cover;
+  padding: 15px;
+  background-color: #02421570;
+  margin-top: 15px;
+}
+  #abouUs-content{
     margin: 25%;
   }
-  #address-div{
-    border: none;
-    background-image: url("../pics/Google_Maps_icon.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  #address{
-    
-    background-size: 80%;
-  }
-  #address, #telephone{
-    border: 1px ;
-    border-radius: 20%;
-    padding: 5px;
-    width: 150px;
-    height: 100px;
-    margin: 20px;
-    text-align: center;
-    vertical-align: middle;
-    align-self: baseline;
-    padding-top: 15px;
-    
-  }
-  #address:hover, #telephone:hover{
-    
-    background-color: #06b93c98;
-    opacity: 50%;
-    cursor: pointer;
-  }
-  #address p, #telephone p{
-    padding-top: 15px;
-    
-  }
-  #google-maps{
-    display: none;
-  }
+#aboutUs-div{
+  background-color: #02421570;
+}
+#wellcome{
+  display: none;
+  padding: 10px;
+  color: black;
+  background-color: #02421570;
+}
 
+#contact{
+  background-color: #02421570;
+  padding-bottom: 20%;
+  text-align: center;
+  max-width: 800px;
+}
+#contact div{
+  -ms-flex: 1;
+  flex: 1;
+}
+#picture-div{
+  margin-left: 25%;
+}
+#left-pic{
+  margin: 5px;
+}
+
+#contact-div div{
+  border: 1px solid black;
+}
+#address-text, #telephone{
+  display: none;
+}
+#address-text{
+  background-size: 80%;
+}
+#address-link, #telephone-link, #writeUs{
+  border: 1px ;
+  padding: 5px;
+  
+  margin: 20px;
+  text-align: center;
+  vertical-align: middle;
+  align-self: baseline;
+  padding-top: 15px;
+  
+}
+#address-text:hover, #telephone:hover{
+  background-color: #06b93c98;
+  opacity: 50%;
+  cursor: pointer;
+}
+#google-maps{
+  display: none;
+  cursor: pointer;
+}
+#writeUs img{
+  width: 200px;
+}
+.show{
+  display: flex;
+}

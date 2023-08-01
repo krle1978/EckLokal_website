@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css">
-    <script type="text/javascript" src="java\actions.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact_style.css">
+    <script type="text/javascript" src="./java/dynamic_actions.js"></script>
+    
     <title>Eck Lokal</title>
 </head>
 <body>
 
     <div class="navbar">   
         <div>
-            <a class="button_navbar" id="home-btn" onclick="OnClickBtn('home-btn')" onmouseover="OnMouseOver('home-btn')" onmouseout="OnMouseOut('home-btn')"></a>
-            <a class="button_navbar" id="aboutUs-btn" onclick="OnClickBtn('aboutUs-btn')" onmouseover="OnMouseOver('aboutUs-btn')" onmouseout="OnMouseOut('aboutUs-btn')"> </a>
-            <a class="button_navbar" id="menu-btn" onclick="OnClickBtn('menu-btn')" onmouseover="OnMouseOver('menu-btn')" onmouseout="OnMouseOut('menu-btn')"></a>
-            <a class="button_navbar" id="starter-btn" onclick="OnClickBtn('starter-btn')" onmouseover="OnMouseOver('starter-btn')" onmouseout="OnMouseOut('starter-btn')"></a>
-            <a class="button_navbar" id="OppenTime-btn" onclick="OnClickBtn('OppenTime-btn')" onmouseover="OnMouseOver('OppenTime-btn')" onmouseout="OnMouseOut('OppenTime-btn')"></a>
-            <a class="button_navbar" id="Picture-btn" onclick="OnClickBtn('Picture-btn')" onmouseover="OnMouseOver('Picture-btn')" onmouseout="OnMouseOut('Picture-btn')"></a>
-            <a class="button_navbar" id="Contact-btn" onclick="OnClickBtn('Contact-btn')" onmouseover=" OnMouseOver('Contact-btn')" onmouseout="OnMouseOut('Contact-btn')"></a>
+            <a class="button_navbar" id="home-btn" name="home-div"></a>
+            <a class="button_navbar" id="aboutUs-btn" name="aboutUs-div"> </a>
+            <a class="button_navbar" id="menu-btn" name="menu-div"></a>
+            <a class="button_navbar" id="card-btn" name="card-div"></a>
+            <a class="button_navbar" id="OppenTime-btn" name="openTime-div"></a>
+            <a class="button_navbar" id="Picture-btn" name="picture-div"></a>
+            <a class="button_navbar" id="Contact-btn" name="contact-div"></a>
             <div ><h2 id="title-navi"></h2></div>
          </div>
     </div>
@@ -31,22 +33,31 @@
                 <div id="welcome-text"></div>
                 <div id="addrsse"></div>
             </div>
-            <div id="aboutUs-div">
+            <div class="menu-show" id="aboutUs-div">
                 <div id="abouUs-content">
                     <h2>Über Uns</h2>
                     <p>Wir sind jeden tag für Sie da. Befinden Uns in wundeschöne umgebung fon Badeteich Hirschschtätten. Sie können bei Uns eine schöne warme küche finden mit gesund essen nach internationales geschmack. </p>
                 </div>
-                
             </div>
-            <div id="openTime-div">
+            <div class="menu-show" id="home-div">
+                <div >
+                    <img src="./icons/logo_EckLokal_465x320.png" alt="ECK LOKAL" srcset="./icons/logo_EckLokal_465x320.png">
+                </div>
+                <div >
+                    <h2>Über Uns</h2>
+                    <p>Wir sind jeden tag für Sie da. Befinden Uns in wundeschöne umgebung fon Badeteich Hirschschtätten. Sie können bei Uns eine schöne warme küche finden mit gesund essen nach internationales geschmack. </p>
+                </div>
+                <div>
+                    <h2>Öffnungszeiten</h2>
+                    <p>Montag	 Geschlossen<br>Dienstag - Sonntag	15:00 – 22:00</p>
+                </div>
+            </div>
+            <div class="menu-show" id="openTime-div">
                 <h2>Öffnungszeiten</h2>
                 <p>Montag	 Geschlossen<br>Dienstag - Sonntag	15:00 – 22:00</p>
             </div>
-                <div class="logo-div" id="logo-div">
-                    <img src="css/icons/logo_EckLokal_465x320.png" alt="ECK LOKAL" srcset="css/icons/logo_EckLokal_465x320.png">
-                </div>
-            <div id="wellcome">
-         
+                
+            <div class="menu-show" id="wellcome">
                 <h2 id="title" class="title">Sie können zum Mitnehmen bestellen</h2>
                 <p id="text" class="text">Sie wollen essen gehen und sind auf der Suche nach dem passenden Restaurant für einen angenehmen Tagesausklang? Wahre Gaumenschmeichler in einem tollen Ambiente präsentieren wir Ihnen im Restaurant Ecklokal. Pure Entspannung bietet in der warmen Jahreszeit unser einzigartiger Außenbereich. Bei der nächsten Hitzewelle direkt zu uns kommen: Unsere klimatisierten Räume sorgen für die willkommene Abkühlung und eine willkommene Pause.</p>
                 <h2 class="title" id="restaurant-title">Authentisches Restaurant mit WLAN</h2>
@@ -54,10 +65,10 @@
                 <h2 class="title" id="organization-title">Wir organisieren Ihre Privatveranstaltungen</h2>
                 <p class="text" id="organization-text">Übrigens können Sie auch mit dem Auto zu uns kommen; wir haben kostenlose Parkplätze für Sie. Der barrierefreie Zugang ist in unserer Lokalität selbstverständlich. Ihre Tiere sind bei uns herzlich willkommen! Reservieren Sie gerne direkt bei uns – wir freuen uns auf Ihren Besuch. Darüber hinaus können Sie uns einfach per Telefon unter 019745234 kontaktieren. Bei uns können Sie bar oder mit kontaktlosem Bezahlen, MasterCard, VISA, Maestro und Bankomatkarte zahlen. Für die besonders Eiligen gibt es unsere Gerichte auch zum Mitnehmen. Steht bei Ihnen ein Ereignis an, das Sie gern in größerer Gesellschaft feiern würden? Buchen Sie unsere Räume – wir freuen uns auf Sie. An 6 Tagen die Woche können Sie von 15:00 – 22:00 Uhr bei uns einkehren. Unser Ruhetag ist Montag.</p>
             </div>
-            <div id="menu">
+            <div class="menu-show" id="menu-div">
                     <img src="Menu/Menu.jpg" alt="Menu picture" srcset="Menu/Menu.jpg">
             </div>
-            <div id="card">
+            <div class="menu-show" id="card-div">
                 <div id="starter-div">
                     <h2 id="starter-title">Vorspeise</h2>
                     <p class="starter" id="starter-text"><strong>Kürbissuppe</strong>  / Brot 4</p>
@@ -117,25 +128,53 @@
             </div>
            
             
-            <div id="contact">
+            <div class="menu-show" id="contact-div">
                 <h2 id="contact-title">Kontakt</h2>
-                <div id="contact-div">   
-                    <div id="address-div" onclick="Address()">   
-                        <p id="address">Ziegelhofstraße 80<br> 1220 Wien<br> Österreich</p>
-                    </div>
-                    <div>   
-                        <a href="tel:+4319745234" data-contact-link="phone">
-                            <p id="telephone">Rufen Sie an:<br>+4319745234</p>
-                        </a>
+                <div>   
+                    <div class="outer-div">
+                        <div class="box" id="bx1">
+                            <div class="innerBox" id="bx11">
+                                <img src="./img/email.png" name="E-mail" alt="email" srcset="" width="100px">
+                                <p>office@ecklokal.at</p>
+                            </div>
+                            <div class="innerBox" id="bx12">
+                                <img src="./img/telephone1.png" name="Telephone" alt="email" srcset="" width="100px">
+                                <p>+4319745234</p>
+                            </div>
+                            <div class="innerBox" id="bx13">
+                                <img src="./img/Google_Maps_icon.png" name="Telephone" alt="email" srcset="" width="100px">
+                            </div>
+                        </div>
                         
+                        <div class="box" id="bx2">
+                            <div class="innerSubBox" id="bx-mail">
+                                <img src="./img/email.png" name="E-mail" alt="email" srcset="" width="50px">
+                                <form action="" method="get">
+                                    <input type="text" name="firstname" placeholder="First Name" id=""><br>
+                                    <input type="text" name="lastname" placeholder="Last Name" id=""><br>
+                                    <input type="email" name="email" placeholder="E-mail" id=""><br>
+                                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                                    <input id="btnSent" type="button" value="Send it!">
+                                </form>
+                                
+                            </div>
+                            <div class="innerSubBox" id="bx-telephone">
+                                <a href="tel:+4319745234" data-contact-link="phone">
+                                    <img src="./img/telephone1.png" name="Telephone" alt="Telephone" srcset="" width="100px">
+                                </a>
+                            </div>
+                            <div class="innerSubBox" id="bx-googleMap">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.9788153840677!2d16.48106737614564!3d48.245535243639495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d015d282ac9a5%3A0x3bbadb57dedae1b5!2sZiegelhofstra%C3%9Fe%2080%2C%201220%20Wien%2C%20Austria!5e0!3m2!1sen!2srs!4v1690388269136!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
                     </div>
-                    
+                    <div class="output"></div>
                 </div>
                 <div id="google-maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.9789994706052!2d16.4836423!3d48.2455317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d015d282ac9a5%3A0x3bbadb57dedae1b5!2sZiegelhofstra%C3%9Fe%2080%2C%201220%20Wien!5e0!3m2!1sen!2sat!4v1674063915459!5m2!1sen!2sat" width="600" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-             <div id="picture-div">
+             <div class="menu-show" id="picture-div">
                 <div id="left-pic">
                     <img src="./pics/chees_bread_01.jpg" height="150px" alt="" srcset="">
                     <img src="./Photos/pasta Bolognese.jpg" height="150px" alt="" srcset="">
